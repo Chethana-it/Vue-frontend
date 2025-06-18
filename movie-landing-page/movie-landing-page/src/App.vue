@@ -1,44 +1,31 @@
-<!-- src/App.vue -->
 <template>
   <div id="app">
     <Header />
     <Hero />
-    <!-- ඉදිරියට Intro, MovieGrid, Contact, Footer වගේ sections ඇතුළත් කරන්න -->
-    <!-- <Intro /> -->
-    <!-- <MovieGrid /> -->
-    <!-- <Contact /> -->
-    <!-- <Footer /> -->
+    <Intro />
+    <MovieGrid />
+    <Contact/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Hero   from './components/Hero.vue'
-// import Intro from './components/Intro.vue'
-// import MovieGrid from './components/MovieGrid.vue'
-// import Contact from './components/Contact.vue'
-// import Footer from './components/Footer.vue'
+import Header   from './components/Header.vue'
+import Hero     from './components/Hero.vue'
+import Intro    from './components/Intro.vue'
+import MovieGrid from './components/MovieGrid.vue'
+import Contact  from './components/Contact.vue'
+import Footer   from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Hero,
-    // Intro,
-    // MovieGrid,
-    // Contact,
-    // Footer
+    Intro,
+   MovieGrid,
+     Contact,
+    Footer
   }
 }
 </script>
-
-<style>
-/* Global styles (optional) */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-#app {
-  overflow-x: hidden;
-}
-</style>
