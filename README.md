@@ -59,8 +59,7 @@ Make sure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/chethanajayasinghe98/movie-landing-page.git
-   cd movie-landing-page
+   git clone https://github.com/Chethana-it/Vue-frontend.git
    ```
 2. **Install dependencies**
 
