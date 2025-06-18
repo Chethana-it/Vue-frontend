@@ -19,7 +19,7 @@ export default {
   name: 'Hero',
   data() {
     return {
-      // slideshow සඳහා images filenames list
+      
       images: [
         'Batman.jpg',
         'Wild West.jpg',
