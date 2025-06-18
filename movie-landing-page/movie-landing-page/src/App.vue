@@ -1,47 +1,44 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
+<!-- src/App.vue -->
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div id="app">
+    <Header />
+    <Hero />
+    <!-- ඉදිරියට Intro, MovieGrid, Contact, Footer වගේ sections ඇතුළත් කරන්න -->
+    <!-- <Intro /> -->
+    <!-- <MovieGrid /> -->
+    <!-- <Contact /> -->
+    <!-- <Footer /> -->
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script>
+import Header from './components/Header.vue'
+import Hero   from './components/Hero.vue'
+// import Intro from './components/Intro.vue'
+// import MovieGrid from './components/MovieGrid.vue'
+// import Contact from './components/Contact.vue'
+// import Footer from './components/Footer.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Hero,
+    // Intro,
+    // MovieGrid,
+    // Contact,
+    // Footer
+  }
 }
+</script>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+<style>
+/* Global styles (optional) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+#app {
+  overflow-x: hidden;
 }
 </style>
